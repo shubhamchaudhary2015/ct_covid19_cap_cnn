@@ -1,2 +1,5 @@
-# DETECTING-COVID-19-AND-COMMUNITY-ACQUIRED-PNEUMONIA-USINGCHEST-CT-SCAN-IMAGES-WITH-DEEP-LEARNING
-2021 Signal Processing Grand Challenge (CPGC) on COVID-19 Diagnosis
+
+
+
+
+### Code will be released soon!!!
