@@ -39,17 +39,17 @@ directory in which the covid_cap_preprocessing.py will be placed.
 #### Step2(stage 1):
 * A. Run covidNormal.py
     * a. This will train the densenet121 as mentioned in report for classifying
-       infection and non infection slice of covid19 patient \
-    * b. It will take the input as folders which will be created in step 1 \
-* B. Run capNormal.py \
+       infection and non infection slice of covid19 patient 
+    * b. It will take the input as folders which will be created in step 1 
+* B. Run capNormal.py 
     * a. This will train the densnet121 as mentioned in report for classifying
        infection and non infection slice of CAP patient
 #### Step3(stage 1):
-* A. Run covid_slice_labelling.py \
+* A. Run covid_slice_labelling.py 
     * a. This will use the model trained in step2(A),to select only the infection
        slices from CT scan of covid patient(‘covid56to171’) into the folder
-       covid56to_label(This will be created when we run the script covid_slice_labelling.py)\
-* B. Run cap_slice_labelling.py\
+       covid56to_label(This will be created when we run the script covid_slice_labelling.py)
+* B. Run cap_slice_labelling.py
     * a. This will use the model trained in step2(B),to select only the infection slice from CT scan of CAP patient(‘cap26to60’) into the folder
        cap26to_label(This will be created when we run the script cap_slice_labelling.py)
 #### Step4(stage 1):
