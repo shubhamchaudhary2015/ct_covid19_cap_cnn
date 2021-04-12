@@ -37,12 +37,12 @@ patients(name = ‘cap26to60’) whose slice level infection is not given.
 ● To run this we need COVID-19,CAP and Normal subjects in the same
 directory in which the covid_cap_preprocessing.py will be placed.
 #### Step2(stage 1):
-A. Run covidNormal.py
-    a. This will train the densenet121 as mentioned in report for classifying
+*A. Run covidNormal.py
+    *a. This will train the densenet121 as mentioned in report for classifying
        infection and non infection slice of covid19 patient\
-    b. It will take the input as folders which will be created in step 1\
-B. Run capNormal.py\
-    a. This will train the densnet121 as mentioned in report for classifying
+    *b. It will take the input as folders which will be created in step 1\
+*B. Run capNormal.py\
+    *a. This will train the densnet121 as mentioned in report for classifying
        infection and non infection slice of CAP patient
 #### Step3(stage 1):
 A. Run covid_slice_labelling.py\
