@@ -53,12 +53,12 @@ B. Run cap_slice_labelling.py\
     a. This will use the model trained in step2(B),to select only the infection slice from CT scan of CAP patient(‘cap26to60’) into the folder
        cap26to_label(This will be created when we run the script cap_slice_labelling.py)
 #### Step4(stage 1):
-● Combine all the infection slices for covid patient = ‘covid’(created in step1)+covid56to_label(created in step3 a)
-● Combine all the infection slices for CAP patient = ‘cap’(created in step1)+cap26to_label(created in step3 b)
+* Combine all the infection slices for covid patient = ‘covid’(created in step1)+covid56to_label(created in step3 a)
+* Combine all the infection slices for CAP patient = ‘cap’(created in step1)+cap26to_label(created in step3 b)
 #### Step5(stage 2):
-● Here we can split the CT image patient wise and save them in different
+* Here we can split the CT image patient wise and save them in different
 folder
-● I have already splitted the ct image and put them in folder ‘train_test_covid’, which can be downloaded from https://drive.google.com/file/d/1ojBQyCjQx7Ed5oYGmc4MLfoHi1e_3IfS/view?usp=sharing, this folder contains the preprocessed image into train and test folder which have been obtained after completing all the steps of stage 1
-● Run the Training_model.py
-○ This will save the weights for the model at different epoch, use the model with minimum validation loss.
-○ This is the final model which can be used to classify the patient.
+* I have already splitted the ct image and put them in folder ‘train_test_covid’, which can be downloaded from https://drive.google.com/file/d/1ojBQyCjQx7Ed5oYGmc4MLfoHi1e_3IfS/view?usp=sharing, this folder contains the preprocessed image into train and test folder which have been obtained after completing all the steps of stage 1
+* Run the Training_model.py
+   * ○ This will save the weights for the model at different epoch, use the model with minimum validation loss.
+   * ○ This is the final model which can be used to classify the patient.
