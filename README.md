@@ -24,7 +24,7 @@ SPGC-COVID dataset
 
 ### To get result on Test set which is given:
 Run Test_main.py, it contains the path for folder("test-directory-folder") which is suppose to contain ct scan of each patients(one subfolder folder for each patient), it will return the csv file which will contain prediction of all the patient.
-To run Test_main.py we need pretrined model, which can be downloded from https://drive.google.com/file/d/1aBSl44i927SQpACQ7gKPL8xONAq7gOxr/view?usp=sharing
+To run Test_main.py we need pretrained model, which can be downloded from https://drive.google.com/file/d/1aBSl44i927SQpACQ7gKPL8xONAq7gOxr/view?usp=sharing
 
 
 
