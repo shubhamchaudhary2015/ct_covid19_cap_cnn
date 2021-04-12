@@ -18,13 +18,13 @@
 * Os
 * sys
 
+### Dataset required
+SPGC-COVID dataset
+
 
 ### To get result on Test set which is given:
-Go to folder TestData, it contains python file patient_accuracy.py as well as the
-pretrained model(model trained on spgc data) to classify ct images, path of test set is
-already mentioned.
-patient_accuracy.py should be placed in the directory which contains all the three test
-set it will return three csv files for each test set.
+Run Test_main.py, it contains the path fo folder which is suppose to contain ct scan of each patients(one folder for each patient), it will return the csv file which will contain prediction of all the patient.
+To run Test_main.py we need pretrined model, which can be downloded from https://drive.google.com/file/d/1aBSl44i927SQpACQ7gKPL8xONAq7gOxr/view?usp=sharing
 
 
 
@@ -56,9 +56,8 @@ directory in which the covid_cap_preprocessing.py will be placed.
 * Combine all the infection slices for covid patient = ‘covid’(created in step1)+covid56to_label(created in step3 a)
 * Combine all the infection slices for CAP patient = ‘cap’(created in step1)+cap26to_label(created in step3 b)
 #### Step5(stage 2):
-* Here we can split the CT image patient wise and save them in different
-folder
-* I have already splitted the ct image and put them in folder ‘train_test_covid’, which can be downloaded from https://drive.google.com/file/d/1ojBQyCjQx7Ed5oYGmc4MLfoHi1e_3IfS/view?usp=sharing, this folder contains the preprocessed image into train and test folder which have been obtained after completing all the steps of stage 1
+* Here we can split the CT image patient wise in test and train and save them in different
+folder. Split the dataset into 90% train and 10% test for patient of each category.
 * Run the Training_model.py
    *  This will save the weights for the model at different epoch, use the model with minimum validation loss.
    *  This is the final model which can be used to classify the patient.
