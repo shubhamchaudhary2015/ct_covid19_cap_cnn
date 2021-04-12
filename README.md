@@ -46,20 +46,15 @@ a. This will train the densnet121 as mentioned in report for classifying
 infection and non infection slice of CAP patient
 #### Step3(stage 1):
 A. Run covid_slice_labelling.py
-a. This will use the model trained in step2(A),to select only the infection
-slices from CT scan of covid patient(‘covid56to171’) into the folder
-covid56to_label(This will be created when we run the script
-covid_slice_labelling.py)
+    a. This will use the model trained in step2(A),to select only the infection
+       slices from CT scan of covid patient(‘covid56to171’) into the folder
+       covid56to_label(This will be created when we run the script covid_slice_labelling.py)
 B. Run cap_slice_labelling.py
-a. This will use the model trained in step2(B),to select only the infection
-slice from CT scan of CAP patient(‘cap26to60’) into the folder
-cap26to_label(This will be created when we run the script
-cap_slice_labelling.py)
+    a. This will use the model trained in step2(B),to select only the infection slice from CT scan of CAP patient(‘cap26to60’) into the folder
+       cap26to_label(This will be created when we run the script cap_slice_labelling.py)
 #### Step4(stage 1):
-● Combine all the infection slices for covid patient = ‘covid’(created in step
-1)+covid56to_label(created in step3 a)
-● Combine all the infection slices for CAP patient = ‘cap’(created in
-step1)+cap26to_label(created in step3 b)
+● Combine all the infection slices for covid patient = ‘covid’(created in step1)+covid56to_label(created in step3 a)
+● Combine all the infection slices for CAP patient = ‘cap’(created in step1)+cap26to_label(created in step3 b)
 #### Step5(stage 2):
 ● Here we can split the CT image patient wise and save them in different
 folder
