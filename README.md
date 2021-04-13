@@ -18,6 +18,8 @@
 * Os
 * sys
 
+Paper:https://arxiv.org/abs/2104.05121
+
 ### Dataset required
 SPGC-COVID dataset
 
